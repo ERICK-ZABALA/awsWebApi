@@ -29,7 +29,9 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: Install Python Virtual ENV
-        run: pip3 install virtualenv
+        run: |
+          pip3 install virtualenv
+          ls
              
        
       # Step-4 Build a Virtual ENV, but only if it doesn't already exist
