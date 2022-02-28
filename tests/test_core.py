@@ -1,6 +1,6 @@
 from email import message
 from fastapi.testclient import TestClient
-from main import app
+from api.main import app # api.main esta en la carpeta api el main.py
 
 client = TestClient(app)
 
