@@ -58,7 +58,6 @@ jobs:
         run: |
           cd ./Lib/site-packages
           zip -r9 ../../../../api.zip .
-          ../../../../
           ls
 
       - name: Add API files to Zip file
