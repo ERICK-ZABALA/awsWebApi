@@ -57,13 +57,13 @@ jobs:
       - name: Create archive of dependencies
         run: |
           cd ./Lib/site-packages
-          zip -r9 ../../../../api.zip .
+          zip -r9 ../../../api.zip .
           cd ..
           cd ..
           ls
 
       - name: Add API files to Zip file
-        run: zip -g api.zip -r api
+        run: zip -g api.zip -r api_zip
 
       - name: Upload zip file artifact
         uses: actions/upload-artifact@v2
