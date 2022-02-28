@@ -62,10 +62,11 @@ jobs:
           zip -r9 ../../api.zip .
           cd ..
           cd ..
+          mkdir api
           ls
 
       - name: Add API files to Zip file
-        run: zip -g api.zip -r api_zip
+        run: zip -g api.zip -r api
 
       - name: Upload zip file artifact
         uses: actions/upload-artifact@v2
