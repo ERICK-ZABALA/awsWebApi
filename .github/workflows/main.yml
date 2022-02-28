@@ -56,7 +56,7 @@ jobs:
         # Note that you have to activate the virtualenv in every step
         # because GitHub actions doesn't preserve the environment   
         run: . awsWebApi/bin/activate
-             ls
+            
 
       - name: Create archive of dependencies
         run: |
